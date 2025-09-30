@@ -1,0 +1,39 @@
+/*Reset Geral*/
+body {
+    margin: 0;
+    font-family: "Poppins", Helvetica, sans-serif;
+    color: #fff;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p,
+blockquote {
+    margin: 0;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: unset;
+}
+img {
+    max-width: 100%;
+    display: block;
+}
+
+
+/*Background Geral*/
+.bg-black {
+    background: #09090B;
+}

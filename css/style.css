@@ -1,35 +1,3 @@
-body {
-    margin: 0;
-    font-family: "Poppins", Helvetica, sans-serif;
-    color: #fff;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-ul,
-p,
-blockquote {
-    margin: 0;
-}
-
-ul {
-    padding: 0;
-    list-style: none;
-}
-
-a {
-    text-decoration: none;
-    color: unset;
-}
-img {
-    max-width: 100%;
-    display: block;
-}
-
 .container {
     box-sizing: border-box;
     max-width: 75rem;
@@ -74,34 +42,283 @@ img {
     cursor: pointer;
 }
 
-/*Background Geral*/
-.bg-black {
-    background: #09090B;
-}
 
-/*Display flex*/
+/*Display Flex*/
 .flex {
     display: flex;
-    justify-content: space-between;
 }
-.flex-wrap {
+.wrap {
     flex-wrap: wrap;
 }
+/*Space*/
+.space_start {
+    justify-content: start;
+}
+.space_between {
+    justify-content: space-between;
+}
+.space_around {
+    justify-content: space-around;
+}
 
+
+
+/*Display Grid*/
 .grid {
     display: grid;
 }
-
+.grid__cols__1 {
+    grid-template-columns: repeat(1, 1fr);
+}
 .grid__cols__2 {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
+}
+.grid__cols__3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+.grid__cols__4 {
+    grid-template-columns: repeat(4, 1fr);
+}
+.grid__cols__6 {
+    grid-template-columns: repeat(6, 1fr);
+}
+.grid__cols__7 {
+    grid-template-columns: repeat(7, 1fr);
+}
+.grid__cols__8 {
+    grid-template-columns: repeat(8, 1fr);
+}
+
+
+/*Alinhamento dos itens*/
+.items__center {
+    align-items: center;
+}
+.items__start {
+    align-items: start;
+}
+.items__end {
+    align-items: end;
+}
+
+/*Alinhamento dos Content*/
+.justify__start {
+    justify-content: start;
+}
+.justify__center {
+    justify-content: center;
+}
+.justify__end {
+    justify-content: end;
+}
+
+
+
+
+.m__auto{
+    margin: 0 auto
+}
+
+/*Margin top */
+.mt__120{
+    margin-top: 7.5rem;
+}
+.mt__100{
+    margin-top: 6.25rem;
+}
+.mt__90{
+    margin-top: 5.625rem;
+}
+.mt__80{
+    margin-top: 5rem;
+}
+.mt__70{
+    margin-top: 4.375rem;
+}
+.mt__60{
+    margin-top: 3.75rem;
+}
+.mt__55{
+    margin-top: 3.438rem;
+}
+.mt__50{
+    margin-top: 3.125rem;
+}
+.mt__45{
+    margin-top: 2.813rem;
+}
+.mt__40{
+    margin-top: 2.5rem;
+}
+.mt__35{
+    margin-top: 2.188rem;
+}
+.mt__30{
+    margin-top: 1.875rem;
+}
+.mt__25{
+    margin-top: 1.563rem;
+}
+.mt__20 {
+    margin-top: 1.25rem;
+}
+.mt__15 {
+    margin-top: 0.938rem;
+}
+.mt__10 {
+    margin-top: 0.625rem;
+}
+.mt__5 {
+    margin-top: 0.313rem;
+}
+
+
+
+/*Margin Bottom*/
+.mb__120 {
+    margin-bottom: 7.5rem;
+}
+.mb__100 {
+    margin-bottom: 6.25rem;
+}
+.mb__90 {
+    margin-bottom: 5.625rem;
+}
+.mb__80 {
+    margin-bottom: 5rem;
+}
+.mb__70 {
+    margin-bottom: 4.375rem;
+}
+.mb__60 {
+    margin-bottom: 3.75rem;
+}
+.mb__55 {
+    margin-bottom: 3.438rem;
+}
+.mb__50 {
+    margin-bottom: 3.125rem;
+}
+.mb__45 {
+    margin-bottom: 2.813rem;
+}
+.mb__40 {
+    margin-bottom: 2.5rem;
+}
+.mb__35 {
+    margin-bottom: 2.188rem;
+}
+.mb__30 {
+    margin-bottom: 1.875rem;
+}
+.mb__25 {
+    margin-bottom: 1.563rem;
+}
+.mb__20 {
+    margin-bottom: 1.25rem;
+}
+.mb__16 {
+    margin-bottom: 1rem;
+}
+.mb__15 {
+    margin-bottom: 0.938rem;
+}
+.mb__10 {
+    margin-bottom: 0.625rem;
+}
+.mb__5 {
+    margin-bottom: 0.313rem;
+}
+
+
+
+/*Alinhamento de texto*/
+.text__center{
+    text-align: center;
+}
+.text__left{
+    text-align: left;
+}
+.text__right{
+    text-align: right;
+}
+
+
+/*Gap*/
+.gap__10{
+    gap: 0.625rem;
+}
+.gap__20 {
+    gap: 1.25rem;
+}
+
+
+
+
+/*Line Height*/
+.line__1_5{
+    line-height: 1.5;
+}
+
+
+/*Font Weight*/
+.font__normal {
+    font-weight: 300;
+}
+
+/*.font__semibold {*/
+/*    font-weight: ;*/
+/*}*/
+
+/*.font__bold {*/
+/*    font-weight: ;*/
+/*}*/
+
+.formulario__contato{
+
+}
+
+/*.text__p {*/
+/*    font-size: 1rem;*/
+/*}*/
+
+.text__12 {
+    font-size:0.75rem;
+}
+
+.text__16 {
+    font-size:1rem;
+}
+.text__24 {
+    font-size:1.5rem;
+}
+.text__32 {
+    font-size:2rem;
+}
+.text__40 {
+    font-size: 2.5rem;
+}
+.text__48 {
+    font-size:3rem;
+}
+.text__56 {
+    font-size:3.5rem;
+}
+.text__64 {
+    font-size:4rem;
+}
+
+.text__hide{
+    display: none;
+}
+
+
+main {
+    padding-top: 100px;
 }
 
 .grid__cols__card{
     grid-template-columns: 1fr 3fr;
-}
-
-.it__center {
-    align-items: center;
 }
 
 .menu{
@@ -109,71 +326,6 @@ img {
     gap: 2rem;
 }
 
-.m__auto{
-    margin: 0 auto
-}
-
-.mt__120 {
-    margin-top: 6.25rem;
-}
-
-.mt__80 {
-    margin-top: 5rem;
-}
-
-.mt__20 {
-    margin-top: 2.5rem;
-}
-
-.mb__80 {
-    margin-bottom: 5rem;
-}
-.mb__20 {
-    margin-bottom: 2.5rem;
-}
-
-.mb__16 {
-    margin-bottom: 1rem;
-}
-
-.text__center{
-    text-align: center;
-}
-
-.jus__center {
-    justify-content: center;
-}
-
-.gap__20 {
-    gap: 1.25rem;
-}
-.gap__10{
-    gap: 0.625rem;
-}
-
-.line__1_5{
-    line-height: 1.5;
-}
-
-.text__normal {
-    font-weight: 300;
-}
-
-/*.text__p {*/
-/*    font-size: 1rem;*/
-/*}*/
-
-.text__p {
-    font-size:0.75rem;
-}
-
-.text__h1{
-    font-size: 2rem;
-}
-
-main {
-    padding-top: 100px;
-}
 .box__template {
     display: grid;
     grid-template-columns: 1fr;
@@ -186,15 +338,7 @@ main {
     gap: 1rem;
     border: 1px solid #1E2836;
     padding: 2rem;
-    height: 180px;
-}
-
-.w__150{
-    max-width: 150px;
-}
-
-.text__hide{
-    display: none;
+    height: auto;
 }
 
 .border__top {
@@ -206,51 +350,3 @@ footer p{
     padding: 20px;
 }
 
-@media (min-width: 500px) {
-    .text__p {
-        font-size:1rem;
-    }
-
-
-}
-
-@media (min-width: 600px) {
-    .box__template {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 1rem;
-    }
-
-    .grid__cols__card {
-        grid-template-columns: 1fr;
-        gap: 1rem;
-    }
-    .gap__20{
-        gap: 2rem;
-    }
-    .box__card{
-        height: auto;
-    }
-
-}
-
-
-@media (min-width: 800px) {
-   p {
-       max-width: 920px;
-       margin: 0 auto;
-   }
-    .text__h1{
-        font-size: 3rem;
-    }
-
-
-}
-
-@media (min-width: 1024px) {
-    .box__template {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-
-}
